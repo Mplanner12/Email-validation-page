@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <script src="https://kit.fontawesome.com/76edf1e5d3.js" crossorigin="anonymous"></script>
+
+  <title>ES8 Project</title>
+ </head>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="input-field">
+  <input type="email" placeholder="Enter your email"/>
+  <i class="fas fa-envelope email-icon"></i>
+</div>
+
+<script>
+  const input = document.querySelector("input")
+  const emailIcon = document.querySelector(".email-icon")
+  input.addEventListener("keyup", ()=>{
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if(input.value === ""){
+      emailIcon.classList.replace("fa-circle-check", "fa-envelope")
+      return emailIcon.style.color= "#b4b4b4"
+    }
+    if(input.value.match(pattern)){
+      emailIcon.classList.replace("fa-envelope", "fa-circle-check");
+      return emailIcon.style.color= "#4bb543"
+    }
+    emailIcon.classList.replace("fa-circle-check", "fa-envelope");
+    emailIcon.style.color= "#de0611"
+  })
+</script>
+</body>
+</html>

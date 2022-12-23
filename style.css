@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 130%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+}
+
+.input-field{
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  height: 80px;
+  width: 310px;
+  border-radius: 16px;
+  background-color: efff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+}
+
+.input-field input{
+  height: 80px;
+  width: 310px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input::placeholder{
+  color: #b4b4b4;
+}
+
+.input-field .email-icon{
+  position: absolute;
+  right: 3%;
+  bottom: 22%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #b4b4b4;
+}
